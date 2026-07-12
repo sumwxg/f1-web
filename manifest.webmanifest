@@ -1,0 +1,15 @@
+{
+  "name": "APEX F1 Live",
+  "short_name": "APEX F1",
+  "description": "基于公开数据源的 F1 赛历、赛果、积分与新闻应用。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f4f0",
+  "theme_color": "#e10600",
+  "orientation": "any",
+  "icons": [
+    { "src": "/icons/f1.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
