@@ -22,3 +22,15 @@
 - iPhone / iPad：在 Safari 点“分享”，选择“添加到主屏幕”。
 
 安装后将以独立窗口运行，并缓存应用外壳；赛果与新闻仍需网络连接以保持真实数据。
+
+## 腾讯云服务器部署
+
+该仓库还包含可直接在 Ubuntu / Debian 腾讯云服务器运行的 Docker 配置。先在腾讯云安全组放行 TCP 80（及后续 HTTPS 的 443），然后在服务器终端执行：
+
+```bash
+git clone https://github.com/sumwxg/f1-web.git apex-f1-live
+cd apex-f1-live
+docker compose up -d --build
+```
+
+服务器公网 IP 的 `http://<公网-IP>/` 即可访问。绑定域名后，应通过 Nginx 或 Caddy 配置 HTTPS；不要长期以 IP 方式运行 PWA。

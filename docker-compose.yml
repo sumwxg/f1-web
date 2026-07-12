@@ -1,0 +1,7 @@
+services:
+  f1-live:
+    build: .
+    container_name: apex-f1-live
+    restart: unless-stopped
+    ports:
+      - "80:8080"
